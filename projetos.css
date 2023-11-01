@@ -1,0 +1,14 @@
+body{
+    background: linear-gradient(90deg, rgba(19, 39, 167, 1) 15%, rgba(0, 0, 0, 1) 86%);
+}
+
+header{
+    margin: 2%;
+    height: 45px;
+}
+
+a{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Public Sans', sans-serif;
+}
