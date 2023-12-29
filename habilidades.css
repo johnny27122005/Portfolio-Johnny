@@ -1,0 +1,105 @@
+#habilidades{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main {
+  align-items: flex-start;
+}
+
+#imagens__skills{
+    display: flex;
+    padding: 35px;
+}
+
+#apresentacao {
+    margin: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #apresentacao__conteudo__titulo {
+    font-size: 145px;
+    font-family: "Public Sans", sans-serif;
+  }
+  
+  #apresentacao__links {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Public Sans", sans-serif;
+    justify-content: center;
+  }
+  
+  #apresentacao__links__link:hover {
+    color: cyan;
+    scale: 1.1;
+    transition: 0.3s;
+  }
+
+  .warpper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tab{
+    cursor: pointer;
+    padding:10px 20px;
+    margin:0px 2px;
+    background:#000;
+    display:inline-block;
+    color:#fff;
+    border-radius:3px 3px 0px 0px;
+    box-shadow: 0 0.5rem 0.8rem #00000080;
+  }
+  .panels{
+    background:#fffffff6;
+    box-shadow: 0 2rem 2rem #00000080;
+    min-height:200px;
+    width:100%;
+    max-width:70vw;
+    border-radius:3px;
+    overflow:hidden;
+    padding:20px;  
+  }
+  .panel{
+    display:none;
+    animation: fadein .8s;
+  }
+  @keyframes fadein {
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+  }
+  .panel-title{
+    font-size:1.5em;
+    font-weight:bold
+  }
+  .radio{
+    display:none;
+  }
+
+  #one:checked ~ .panels #one-panel,
+  #two:checked ~ .panels #two-panel,
+  #three:checked ~ .panels #three-panel,
+  #four:checked ~ .panels #four-panel
+  {
+    display:block
+  }
+  #one:checked ~ .tabs #one-tab,
+  #two:checked ~ .tabs #two-tab,
+  #three:checked ~ .tabs #three-tab{
+    background:#fffffff6;
+    color:#000;
+    border-top: 3px solid #000;
+  }
+
+  .panels p {
+    color: #000;
+  }
