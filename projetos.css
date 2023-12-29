@@ -17,5 +17,6 @@ iframe {
 #titulo {
     display: flex;
     justify-content: center;
+    font-family: "Public Sans", sans-serif;
     color: white;
 }
